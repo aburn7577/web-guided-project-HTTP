@@ -32,7 +32,7 @@ function Item(props) {
     //1. Connect button to handler.
     //2. make our api call for delete on current id
     //3. set local state to new items with deleted item
-    //4. redirect to our item list page. 
+    //4. redirect to our item list page. asfasd
   }
 
   return (
