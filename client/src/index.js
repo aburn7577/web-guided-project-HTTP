@@ -60,7 +60,7 @@ const App = () => {
       }}/> */}
 
       {/* Child Way (only use with functional component) */}
-      <Route>
+      <Route path='/item-update'>
         <UpdateForm/>
       </Route>
 
