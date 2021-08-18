@@ -12,6 +12,7 @@ import "./styles.css";
 
 const App = () => {
   const [items, setItems] = useState([]);
+
   useEffect(() => {
     const getItems = () => {
       axios
@@ -25,6 +26,7 @@ const App = () => {
     getItems();
   }, []);
 
+  console.log(items);
   return (
     <div className="App">
       <nav>
