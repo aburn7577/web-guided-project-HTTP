@@ -35,7 +35,7 @@ const UpdateForm = props => {
     //4. Make our edit.
     //5. Click the update button.
     //6. Redirect to the item page.
-
+  
   return (
     <div>
       <h2>Update Item</h2>
