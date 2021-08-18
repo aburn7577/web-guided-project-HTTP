@@ -51,10 +51,19 @@ const App = () => {
         path="/item-list/:id"
         render={props => <Item {...props} setItems={setItems} />}
       />
+      {/* Component Way */}
       {/* <Route path="/item-update/:id/" component={UpdateForm}/> */}
-      <Route path="/item-update/:id/" render={(props)=> {
+
+      {/* Render Way (good for class and functional components)*/}
+      {/* <Route path="/item-update/:id/" render={(props)=> {
         return(<UpdateForm {...props} setItems={setItems}/>);
-      }}/>
+      }}/> */}
+
+      {/* Child Way (only use with functional component) */}
+      <Route>
+        <UpdateForm/>
+      </Route>
+
       <Route path="/item-form" component={ItemForm} />
     </div>
   );
