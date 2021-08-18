@@ -45,7 +45,7 @@ const UpdateForm = props => {
     //5. Click the update button.
   const handleSubmit = e => {
     e.preventDefault();
-    axios.put(`http://localhost:3333/items/${id}`)
+    axios.put(`http://localhost:3333/items/${id}`, item)
       .then(res=> {
         console.log(res);
       })
