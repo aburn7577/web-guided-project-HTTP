@@ -26,7 +26,6 @@ const App = () => {
     getItems();
   }, []);
 
-  console.log(items);
   return (
     <div className="App">
       <nav>
