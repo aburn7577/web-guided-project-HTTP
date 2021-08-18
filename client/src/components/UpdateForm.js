@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import axios from "axios";
 
@@ -26,6 +26,10 @@ const UpdateForm = props => {
     });
   };
 
+  useEffect(()=>{
+    
+  }, []);
+
   const handleSubmit = e => {
     e.preventDefault();
   };
@@ -35,7 +39,7 @@ const UpdateForm = props => {
     //4. Make our edit.
     //5. Click the update button.
     //6. Redirect to the item page.
-  
+
   return (
     <div>
       <h2>Update Item</h2>
