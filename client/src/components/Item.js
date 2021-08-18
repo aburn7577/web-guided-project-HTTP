@@ -24,7 +24,7 @@ function Item(props) {
     //Complete Edit Feature:
     //1. Connect code to the edit button.
     //2. Redirect to the update item page.
-    props.history.push('/item-update');
+    props.history.push(`/item-update`);
   }
 
   return (
