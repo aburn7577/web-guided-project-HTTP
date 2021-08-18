@@ -20,6 +20,10 @@ function Item(props) {
     return <h2>Loading item data...</h2>;
   }
 
+  const handleEdit = ()=> {
+    console.log("edit");
+  }
+
   return (
     <div className="item-wrapper">
       <div className="item-header">
