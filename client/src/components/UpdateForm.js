@@ -15,7 +15,6 @@ const UpdateForm = props => {
   const { id } = props.match.params;
   const { push } = props.history;
 
-
   const changeHandler = ev => {
     ev.persist();
     let value = ev.target.value;
