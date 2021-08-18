@@ -57,7 +57,7 @@ const UpdateForm = props => {
       .then(res=> {
         //6. Redirect to the item page.
         push(`/item-list/${id}`);
-        //setItem();
+        setItem();
       })
       .catch(err=> {
         console.log(err);
