@@ -34,6 +34,12 @@ function Item(props) {
     //3. set local state to new items with deleted item
     //4. redirect to our item list page.
     axios.delete(`http://localhost:3333/items/${id}`)
+      .then(res=> {
+        console.log(res);
+      })
+      .catch(err=> {
+        console.log(err);
+      })
   }
 
   return (
