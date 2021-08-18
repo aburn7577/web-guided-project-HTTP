@@ -30,6 +30,12 @@ const UpdateForm = props => {
     e.preventDefault();
   };
 
+  //Complete Edit Feature
+    //3. Get the information for the item we are editing.
+    //4. Make our edit.
+    //5. Click the update button.
+    //6. Redirect to the item page.
+
   return (
     <div>
       <h2>Update Item</h2>
