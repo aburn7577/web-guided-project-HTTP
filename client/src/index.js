@@ -51,6 +51,9 @@ const App = () => {
         path="/item-list/:id"
         render={props => <Item {...props} setItems={setItems} />}
       />
+
+      <Route path="/item-update/:id/" component={UpdateForm}/>
+
       {/* Component Way */}
       {/* <Route path="/item-update/:id/" component={UpdateForm}/> */}
 
@@ -60,9 +63,9 @@ const App = () => {
       }}/> */}
 
       {/* Child Way (only use with functional component) */}
-      <Route path='/item-update/:id'>
-        <UpdateForm setItems={setItems}/>
-      </Route>
+      {/* <Route path='/item-update/:id'>
+        <UpdateForm setItems={()=>}/>
+      </Route> */}
 
       <Route path="/item-form" component={ItemForm} />
     </div>
