@@ -24,8 +24,8 @@ function Item(props) {
     //Complete Edit Feature:
     //1. Connect code to the edit button.
     //2. Redirect to the update item page.
-    props.history.push('/');
-    
+    props.history.push('/update-item');
+
     //3. Get the information for the item we are editing.
     //4. Make our edit.
     //5. Click the update button.
