@@ -12,7 +12,9 @@ const initialItem = {
 
 const UpdateForm = props => {
   const [item, setItem] = useState(initialItem);
-  const id = props.match.params.id;
+  const { id } = props.match.params;
+  const { push } = props.history;
+
 
   const changeHandler = ev => {
     ev.persist();
@@ -47,13 +49,14 @@ const UpdateForm = props => {
     e.preventDefault();
     axios.put(`http://localhost:3333/items/${id}`, item)
       .then(res=> {
+        //6. Redirect to the item page.
+
         console.log(res);
       })
       .catch(err=> {
         console.log(err);
       })
   };
-    //6. Redirect to the item page.
 
   return (
     <div>
